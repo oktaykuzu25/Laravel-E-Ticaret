@@ -35,7 +35,8 @@
                                         <td>{{ $book->name }}</td>
                                         <td>{{ $book->price }}</td>
                                         <td>
-                                            <a href="{{ route('books.edit', $book->id) }}" class="btn btn-primary">Sepete
+                                            <a href="{{ route('shopping.addtocart', $book->id) }}"
+                                                class="btn btn-primary">Sepete
                                                 Ekle</a>
 
                                         </td>

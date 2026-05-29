@@ -60,6 +60,31 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <h2>Sipariş Bilgileri</h2>
+                            <form action="{{ route('order.store') }}" method="POST">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="">Ad</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Ad"
+                                        value="{{ old('name') }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Soyad</label>
+                                    <input type="text" class="form-control" name="surname" placeholder="Soyad"
+                                        value="{{ old('surname') }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Adres</label>
+                                    <input type="text" class="form-control" name="address" placeholder="Adres"
+                                        value="{{ old('address') }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mesaj</label>
+                                    <textarea class="form-control" name="message" placeholder="Sipariş notu (opsiyonel)"
+                                        rows="3">{{ old('message') }}</textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Sipariş Ver</button>
+                            </form>
                         @endif
 
                     </div>

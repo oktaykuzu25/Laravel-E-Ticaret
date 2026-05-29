@@ -23,6 +23,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
+                                    <th scope="col">Kitabı Ekleyen </th>
                                     <th scope="col">Kitabın Adı</th>
                                     <th scope="col">Kitabın Fiyatı</th>
 
@@ -32,6 +33,7 @@
                                 @foreach ($books as $book)
                                     <tr>
                                         <th scope="row">{{ $book->id }}</th>
+                                        <td>{{ $book->user->name }}</td>
                                         <td>{{ $book->name }}</td>
                                         <td>{{ $book->price }}</td>
                                         <td>

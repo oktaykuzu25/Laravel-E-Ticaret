@@ -3,14 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\HomeController;
 
 
+Route::get('/', [HomeController::class, 'home'])->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::prefix('admin')->middleware('auth')->group(function () {
+Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/deneme', [TestController::class, 'test'])->name('test');
     Route::get('/detail', [TestController::class, 'detail'])->name('detail');
 

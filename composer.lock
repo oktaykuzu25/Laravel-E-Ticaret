@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dcbbd52cf3c38d0f1b88e12d39e47db7",
+    "content-hash": "22cff63db4fa1511c37e3fe1ce4e74dd",
     "packages": [
         {
             "name": "brick/math",
@@ -2463,6 +2463,67 @@
                 }
             ],
             "time": "2024-11-21T10:36:35+00:00"
+        },
+        {
+            "name": "overtrue/laravel-shopping-cart",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-shopping-cart.git",
+                "reference": "57eb1d76e33675ba0fb69d8eff15dafa5d2718f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-shopping-cart/zipball/57eb1d76e33675ba0fb69d8eff15dafa5d2718f1",
+                "reference": "57eb1d76e33675ba0fb69d8eff15dafa5d2718f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "illuminate/session": "5.8.* || ~6.0",
+                "mockery/mockery": "~1.2",
+                "phpunit/phpunit": "~7.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelShoppingCart\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "ShoppingCart": "Overtrue\\LaravelShoppingCart\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelShoppingCart\\": "src/LaravelShoppingCart/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "Shopping cart for Laravel Application.",
+            "keywords": [
+                "laravel",
+                "shopping",
+                "shopping cart"
+            ],
+            "support": {
+                "issues": "https://github.com/overtrue/laravel-shopping-cart/issues",
+                "source": "https://github.com/overtrue/laravel-shopping-cart/tree/2.0.2"
+            },
+            "abandoned": true,
+            "time": "2019-10-12T03:35:18+00:00"
         },
         {
             "name": "phpoption/phpoption",
